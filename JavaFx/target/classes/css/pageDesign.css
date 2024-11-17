@@ -1,0 +1,13 @@
+.white_form{
+    -fx-background-color: #FFFFFF;
+}
+.texfield {
+    -fx-background-color: transparent;
+    -fx-border-color: #000;
+    -fx-border-width: .5px;
+}
+.btn{
+-fx-cursor: hand;
+    -fx-background-color: blue;
+    -fx-text-fill: white;
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.control.PasswordField?>
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="529.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.rtd.javafx.StudentPortalController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" stylesheets="@../../../css/pageDesign.css">
+         <children>
+            <FontAwesomeIcon fill="#2f3ad7" fontSmoothingType="LCD" glyphName="USER" layoutX="140.0" layoutY="151.0" selectionFill="#2450d3" selectionStart="0" size="6em" />
+            <Label layoutX="78.0" layoutY="167.0" text="Sign In Your Account">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="131.0" layoutY="205.0" text="Student Portal" />
+            <TextField fx:id="student_studentID" layoutX="62.0" layoutY="246.0" onAction="#loginAccount" prefHeight="25.0" prefWidth="220.0" promptText="Student ID" stylesheets="@../../../css/pageDesign.css" />
+            <PasswordField fx:id="student_password" layoutX="62.0" layoutY="287.0" onAction="#loginAccount" prefHeight="25.0" prefWidth="220.0" promptText="password" stylesheets="@../../../css/pageDesign.css" />
+            <Button fx:id="student_loginbtn" layoutX="62.0" layoutY="336.0" mnemonicParsing="false" onAction="#loginAccount" prefHeight="30.0" prefWidth="220.0" styleClass="btn" stylesheets="@../../../css/pageDesign.css" text="Login" />
+            <ComboBox fx:id="student_select" layoutX="66.0" layoutY="459.0" onAction="#switchForm" prefWidth="220.0" promptText="Select" />
+            <Label layoutX="116.0" layoutY="431.0" text="Other Accounts" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
